@@ -1,0 +1,28 @@
+{
+  "name": "arqgasp-homepage",
+  "version": "1.0.0",
+  "description": "Arqgasp site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Gabriel e Silva Pereira",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.5.1",
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-next": "^12.2.2",
+    "prettier": "^2.7.1"
+  }
+}

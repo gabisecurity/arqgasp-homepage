@@ -14,7 +14,7 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { ArrowDownIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -68,6 +68,9 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <LinkItem href="/betropical" path={path}>
+            Be:Tropical
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -75,10 +78,25 @@ const Navbar = props => {
             <Menu>
               <MenuButton
                 as={IconButton}
-                icon={<HamburgerIcon />}
+                icon={<ArrowDownIcon />}
                 variant="outline"
                 aria-label="Options"
               />
+
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/betropical" passHref>
+                  <MenuItem as={Link}>Be:Tropical</MenuItem>
+                </NextLink>
+                <NextLink href="https://github.com/arqgasp/arqgasp-homepage" passHref>
+                  <MenuItem as={Link}>Source Code</MenuItem>
+                </NextLink>
+              </MenuList>
 
             </Menu>
           </Box>

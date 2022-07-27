@@ -64,13 +64,13 @@ const Navbar = props => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Piferia
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            Cartas para Rosa
           </LinkItem>
           <LinkItem href="/betropical" path={path}>
-            Be:Tropical
+            Portfolio
           </LinkItem>
         </Stack>
 
@@ -87,16 +87,16 @@ const Navbar = props => {
 
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>Bio</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/piferia" passHref>
+                  <MenuItem as={Link}>Piferia</MenuItem>
                 </NextLink>
-                <NextLink href="/betropical" passHref>
-                  <MenuItem as={Link}>Be:Tropical</MenuItem>
+                <NextLink href="/Cartas para Rosa" passHref>
+                  <MenuItem as={Link}>Cartas para Rosa</MenuItem>
                 </NextLink>
-                <NextLink href="https://github.com/arqgasp/arqgasp-homepage" passHref>
-                  <MenuItem as={Link}>Source Code</MenuItem>
+                <NextLink href="/portfolio" passHref>
+                  <MenuItem as={Link}>Portfolio</MenuItem>
                 </NextLink>
               </MenuList>
 
